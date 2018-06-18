@@ -1,0 +1,8 @@
+{
+  "name": "PScanner",
+  "app_id": "03c2a3a2",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
