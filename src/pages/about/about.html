@@ -1,11 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+     PScanner
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
+    <button ion-button full icon-left (click)="scanCode()">
+      <ion-item name="qr-scanner"></ion-item>
+        Scan Code
+    </button>
+    <ion-card *ngIf="productUrl" >
+        <ion-card-content>
+          <a><p>{{ productUrl }} </p></a>
+        </ion-card-content>
+        <button ion-button full icon-left (click)="openWebPage()">Open Web Page</button>"
+    </ion-card>
 </ion-content>
