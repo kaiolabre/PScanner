@@ -8,14 +8,17 @@
 
 <ion-content padding>
 
-    <button ion-button full icon-left (click)="scanCode()">
+    <button ion-button full (click)="scanCode()">
       <ion-item name="qr-scanner"></ion-item>
         Scan Code
     </button>
-    <ion-card *ngIf="productUrl" >
+   
+    <ion-card *ngIf="productUrl">
+        <ngx-qrcode [qrc-value]="productUrl"></ngx-qrcode>
         <ion-card-content>
-          <a><p>{{ productUrl }} </p></a>
+          <a>URL:<p>{{ productUrl }} </p></a>
         </ion-card-content>
-        <button ion-button full icon-left (click)="openWebPage()">Open Web Page</button>"
+        <button ion-button full icon-left (click)="openWebPage()">Open Product Info</button>
     </ion-card>
+
 </ion-content>

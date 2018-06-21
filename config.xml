@@ -89,4 +89,5 @@
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
     <plugin name="cordova-plugin-themeablebrowser" spec="^0.2.17" />
     <plugin name="cordova-plugin-firebase" spec="^1.0.5" />
+    <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
 </widget>
