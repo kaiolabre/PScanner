@@ -6,6 +6,9 @@ import { ToastController } from 'ionic-angular';
 
 import { AngularFireAuth } from 'angularfire2/auth';
 
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LoginPage } from '../login/login';
+
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -14,7 +17,7 @@ export class TabsPage {
   tab1Root = HomePage;
   tab2Root = AboutPage;
 
-  constructor(private afAuth: AngularFireAuth, private toast: ToastController) {
+  constructor(private afAuth: AngularFireAuth, private toast: ToastController, private navCtrl: NavController) {
 
   }
   ionViewWillLoad(){
@@ -29,6 +32,7 @@ export class TabsPage {
           message: `Authentication Failed`,
           duration: 3000
         }).present();
+        this.navCtrl.setRoot(LoginPage);
       }
         
     });
