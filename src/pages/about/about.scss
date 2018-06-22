@@ -1,7 +1,16 @@
 page-about {
 
 }
+
 button .item-md {
     width:0px;
     padding: 0px;
+}
+.ios,
+.md {
+    page-about {
+        .margin-top-35 {
+            margin-top: 35px;
+        }
+     }
 }
